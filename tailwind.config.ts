@@ -9,8 +9,8 @@ const config: Config = {
 	theme: {
 		extend: {
 			colors: {
-				primary: '#6941C6',
-				secondary: '6941C6',
+				primary: 'rgb(22 163 74 / 1)',
+				secondary: '#6941C6',
 				border: '#707d86',
 				focus: '#7A59D8',
 				hover: '#5B36B0',
@@ -26,6 +26,7 @@ const config: Config = {
 			backgroundColor: {
 				btn: '#f4f2ee',
 				preview: '#f4f2ee',
+				btnHover: 'rgb(21 128 61 / 1)',
 			},
 
 			borderColor: {
