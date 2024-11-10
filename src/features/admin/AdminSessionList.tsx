@@ -40,9 +40,7 @@ const AdminSessionList = () => {
 									<div className='flex items-center space-x-6 text-gray-600 mt-4'>
 										<div className='flex items-center space-x-2'>
 											<CalendarIcon className='' />
-											<span className='whitespace-nowrap'>
-												2024-03-20 at 10:00 AM
-											</span>
+											<span className='whitespace-nowrap'>{item?.date}</span>
 										</div>
 
 										<div className='flex items-center space-x-2'>
@@ -52,7 +50,9 @@ const AdminSessionList = () => {
 
 										<div className='flex items-center space-x-2'>
 											<ClockIcon />
-											<span className='whitespace-nowrap'>60 minutes</span>
+											<span className='whitespace-nowrap'>
+												{item?.duration}
+											</span>
 										</div>
 									</div>
 								</div>
