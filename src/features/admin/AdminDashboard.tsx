@@ -1,6 +1,6 @@
 import { ButtonWrapper } from '@/components/button/Button';
 import Navbar from '@/components/navbar/Navbar';
-import { Calendar1Icon, PlusIcon } from 'lucide-react';
+import { PlusIcon } from 'lucide-react';
 import React from 'react';
 import AdminSessionList from './AdminSessionList';
 
