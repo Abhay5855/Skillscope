@@ -3,14 +3,14 @@ import React from 'react';
 const Pricing = () => {
 	return (
 		<>
-			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8'>
+			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4 mb-8'>
 				<div className='text-center'>
-					<h2 className='text-3xl font-extrabold text-gray-900 sm:text-4xl'>
+					<h1 className='text-3xl font-extrabold text-gray-900 sm:text-4xl'>
 						Flexible Pricing for Every Need
-					</h2>
-					<p className='mt-4 text-xl text-gray-600'>
+					</h1>
+					<span className='mt-4 text-xl text-gray-600'>
 						Choose the plan that fits your organization's testing requirements
-					</p>
+					</span>
 				</div>
 				<div className='mt-16 grid gap-8 lg:grid-cols-3'>
 					<div className='bg-white rounded-lg shadow-lg overflow-hidden'>
