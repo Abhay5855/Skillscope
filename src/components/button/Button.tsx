@@ -8,6 +8,7 @@ type ButtonProps = {
 	children: React.ReactNode;
 	pill?: boolean;
 	variant?: 'primary' | 'secondary' | 'icon';
+	disabled?:boolean;
 };
 
 export const ButtonWrapper: FC<ButtonProps> = ({
@@ -16,10 +17,11 @@ export const ButtonWrapper: FC<ButtonProps> = ({
 	onClick,
 	pill = false,
 	variant = 'primary',
+	disabled = false,
 	...props
 }) => {
 	const baseClasses =
-		'inline-flex items-center px-4 py-3 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary hover:bg-btnHover focus:ring transition whitespace-nowrap';
+		'items-center px-4 py-3 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary hover:bg-btnHover focus:ring text-center transition whitespace-nowrap';
 
 	const variantClasses = {
 		primary: 'bg-primary',
@@ -35,6 +37,7 @@ export const ButtonWrapper: FC<ButtonProps> = ({
 			{...props}
 			type={type}
 			onClick={onClick}
+			disabled={disabled}
 		>
 			{children}
 		</Button>

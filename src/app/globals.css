@@ -15,7 +15,7 @@
 }
 
 html {
-	color-scheme: dark light;
+	/* color-scheme: dark light; */
 	hanging-punctuation: first last;
 }
 
@@ -44,6 +44,12 @@ h6 {
 p {
 	max-width: 75ch;
 	text-wrap: pretty;
+}
+.bg-side-banner{
+    background-image: url('../../public/bg-sigup.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .ProseMirror:focus {
