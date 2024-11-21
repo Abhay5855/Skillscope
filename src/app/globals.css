@@ -45,11 +45,11 @@ p {
 	max-width: 75ch;
 	text-wrap: pretty;
 }
-.bg-side-banner{
-    background-image: url('../../public/bg-sigup.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.bg-side-banner {
+	background-image: url('../../src/app/assets/Skillscopebanner.svg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .ProseMirror:focus {
