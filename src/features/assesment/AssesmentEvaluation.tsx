@@ -30,7 +30,7 @@ const AssesmentEvalutation = ({ criteriums = criteria } : AssesmentEvalutationPr
                     <div className='w-full flex flex-col gap-4'>
                         <div className='inline-flex justify-between'>
                             <span className='font-medium'>{item.title}</span>
-                            <span className='text-gray-600'>Score: 0/5</span>
+                            <span className='text-gray-600'>Score: {stars[i]}/5</span>
                         </div>
                         <p className='text-gray-600'>{item.description}</p>
                         <div className='flex w-3/4 text-gray-300'>
