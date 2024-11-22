@@ -32,3 +32,18 @@ export const sessions = [
 		participants: ['User 3', 'User 4'],
 	},
 ];
+
+export const criteria = [
+	{
+		title: 'Problem Solving',
+		description: 'Ability to analyze and solve problems effectively.'
+	},
+	{
+		title: 'Code Quality',
+		description: 'Cleanliness, orginization, and maintainibility of code.'
+	},
+	{
+		title: 'Technical Skills',
+		description: 'Knowledge and application of techincal concepts.'
+	}
+]
