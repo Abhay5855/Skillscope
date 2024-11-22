@@ -1,10 +1,15 @@
 import React from 'react';
-import { Brain } from 'lucide-react';
+import { Brain, UsersIcon } from 'lucide-react';
 import Link from 'next/link';
 import Seo from '../seo/Seo';
 import { NavbarLinks } from '@/data/data';
 
-export default function Navbar() {
+interface NavbarProps {
+	includeLinks?: boolean,
+	includeAssesmentLinks?: boolean,
+}
+
+export default function Navbar({ includeLinks = true, includeAssesmentLinks = false }: NavbarProps) {
 	const renderLinks = () => {
 		return NavbarLinks.map((item) => (
 			<Link
@@ -29,13 +34,19 @@ export default function Navbar() {
 							</span>
 						</Link>
 						<div className='flex items-center space-x-4'>
-							{renderLinks()}
-							<Link
-								href='/signin'
-								className=' inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary hover:bg-btnHover'
-							>
-								Sign in
-							</Link>
+							{includeLinks && renderLinks()}
+							{
+								includeLinks &&
+								<Link
+									href='/signin'
+									className=' inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary hover:bg-btnHover'
+								>
+									Sign in
+								</Link>
+							}
+							{
+								includeAssesmentLinks && <Link href='/' className='inline-flex items-center justify-center space-x-2 px-4 py-2 border rounded-md text-sm font-medium border-primary text-primary'><UsersIcon /> <span className='whitespace-nowrap'>Join Room</span></Link>
+							}
 						</div>
 					</div>
 				</div>
