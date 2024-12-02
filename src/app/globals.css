@@ -23,6 +23,10 @@ body {
 	min-height: 100vh;
 }
 
+em{
+	font-style: italic;
+}
+
 img,
 picture,
 svg,
@@ -41,9 +45,31 @@ h6 {
 	text-wrap: balance;
 }
 
+h1 {
+	@apply text-4xl font-bold;
+}
+h2 {
+	@apply text-3xl font-semibold;
+}
+
+a{
+	@apply text-blue-600 hover:text-blue-800;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+
+ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+}
+
 p {
-	max-width: 75ch;
-	text-wrap: pretty;
+  max-width: 75ch;
+  text-wrap: pretty;
 }
 .bg-side-banner {
 	background-image: url('../../src/app/assets/Skillscopebanner.svg');
