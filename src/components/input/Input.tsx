@@ -2,7 +2,7 @@ import { Input } from '@headlessui/react';
 import { FC } from 'react';
 
 type InputProps = {
-	type: 'text' | 'password' | 'email' | 'number' | 'search' | 'tel' | 'url';
+	type: 'text' | 'password' | 'email' | 'number' | 'search' | 'tel' | 'url' | 'checkbox' | 'file';
 	placeholder: string;
 	name: string;
 	value: string;
